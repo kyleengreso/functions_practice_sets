@@ -10,8 +10,6 @@ def computes_area(a, b, c) -> float:
     Returns:
     - float, area of the triangle
     """
-    if a <= 0 or b <= 0 or c <= 0:
-        raise ValueError("Side lengths must be positive numbers.")
     s = (a + b + c) / 2
     area = ((s) * (s - a) * (s - b) * (s - c)) ** 0.5
     return area
