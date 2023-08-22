@@ -21,7 +21,7 @@ c= float(input("Please enter side (c): "))
 area = computes_area(a,b,c)
 print(area)
 
-def leap_year(a):
+def leap_year(a) -> int:
     if a % 4 == 0 and a % 100 != 0 or (a % 100 == 0 and a % 400 == 0):
         return True
     else:
